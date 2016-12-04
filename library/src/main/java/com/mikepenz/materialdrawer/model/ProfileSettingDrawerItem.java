@@ -215,6 +215,8 @@ public class ProfileSettingDrawerItem extends AbstractDrawerItem<ProfileSettingD
         //set the identifier from the drawerItem here. It can be used to run tests
         viewHolder.itemView.setId(hashCode());
 
+        viewHolder.itemView.setTag(this);
+
         //set the item enabled if it is
         viewHolder.itemView.setEnabled(isEnabled());
 

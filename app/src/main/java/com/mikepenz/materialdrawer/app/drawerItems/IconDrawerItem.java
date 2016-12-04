@@ -174,6 +174,8 @@ public class IconDrawerItem extends AbstractDrawerItem<IconDrawerItem, IconDrawe
         //set the identifier from the drawerItem here. It can be used to run tests
         viewHolder.itemView.setId(hashCode());
 
+        viewHolder.itemView.setTag(this);
+
         //get the correct color for the icon
         int iconColor;
         if (this.isEnabled()) {
